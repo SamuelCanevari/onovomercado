@@ -1,0 +1,299 @@
+@import url(/wp-content/themes/o-novo-mercado/font/gilroy.css);
+@import url(/wp-content/themes/o-novo-mercado/font/silkSerif.css);
+
+.onm-404 {
+    background: linear-gradient(#ffd166 25%, #fff 25%);
+    display: flex;
+    justify-content: center;
+    font-family: "Gilroy", sans-serif
+}
+
+.onm-404-botao,
+.onm-404-botao:active,
+.onm-404-botao:focus,
+.onm-404-botao:visited {
+    background: #14213d;
+    border-radius: 117px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    display: inline-block;
+    margin: 70px 0 0;
+    padding: 25px 40px;
+    transition: .6s
+}
+
+.onm-404-botao:hover {
+    background: #ff1654;
+    color: #fff
+}
+
+.onm-404-container {
+    max-width: 1366px;
+    min-height: 80vh;
+    padding: 80px 2%;
+    text-align: center
+}
+
+.onm-404-texto {
+    color: #14213d;
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 1;
+    margin: 20px 0 0
+}
+
+.onm-404-titulo {
+    color: #ff1654;
+    font-size: 60px;
+    font-weight: 700;
+    margin: 40px 0 0
+}
+
+.onm-footer2 {
+    background: #000;
+    color: #fff;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column
+}
+
+.onm-footer2 a {
+    color: #fff;
+    font-weight: 700;
+    padding: 10px
+}
+
+.onm-footer2C {
+    font-size: 14px
+}
+
+.onm-newsletter {
+    background: #e5e5e5;
+    display: flex;
+    justify-content: center
+}
+
+.onm-newsletterC {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1366px;
+    padding: 100px 5%;
+    width: 100%
+}
+
+.onm-newsletterCL {
+    ;
+    width: 25%
+}
+
+.onm-newsletterCR {
+    padding-left: 10%;
+    width: 75%
+}
+
+input[type=submit].onm-newsletter-botao,
+input[type=submit].onm-newsletter-botao:active,
+input[type=submit].onm-newsletter-botao:focus,
+input[type=submit].onm-newsletter-botao:visited {
+    background: #ff1654;
+    border-radius: 35px;
+    color: #edffff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: initial;
+    line-height: 1.19;
+    min-width: 280px;
+    padding: 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+    transform: translateX(-70px);
+    transition: .6s
+}
+
+input[type=submit].onm-newsletter-botao:active {
+    transform: translateY(5px)
+}
+
+input[type=submit].onm-newsletter-botao:hover {
+    background: #f03875;
+    color: #fff
+}
+
+input[type=email].onm-newsletter-email {
+    background: #fff;
+    border: solid 1px #707070;
+    border-radius: 35px;
+    height: 58px;
+    max-width: 628px;
+    width: 100%
+}
+
+.onm-newsletter-form {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%
+}
+
+.onm-newsletter-texto {
+    color: #011627;
+    font-size: 16px;
+    line-height: 1.63;
+    margin: 0
+}
+
+.onm-newsletter-titulo {
+    color: #011627;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.16;
+    margin: 0 0 20px
+}
+
+.onm-topo {
+    background: #081b39;
+    display: flex;
+    font-family: "Gilroy", sans-serif;
+    justify-content: center
+}
+
+.onm-topo-link,
+.onm-topo-link:visited {
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 0 10px;
+    transition: all .3s ease
+}
+
+a.onm-topo-link:hover,
+a.ativo.onm-topo-link {
+    color: #42ebd5
+}
+
+.onm-topo-link.super {
+    padding: 10px 25px;
+    border-radius: 31px;
+    background-color: #ed145b;
+    color: #fff;
+    font-size: 13px;
+    font-family: Gilroy;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.15;
+    letter-spacing: normal;
+    text-align: left;
+    transition: all .3s ease
+}
+
+.onm-topo-link.super:hover {
+    background-color: #f03875;
+    color: #fff
+}
+
+.onm-topo-logotipo {
+    max-height: 110px;
+    padding: 25px 0
+}
+
+@media screen and (max-width:990px) {
+    .onm-topoC {
+        display: block;
+        padding: 0 5%;
+        max-width: 1366px;
+        width: 100%
+    }
+
+    .onm-topoCL {
+        display: block;
+        margin: 30px auto;
+        text-align: center
+    }
+
+    .onm-topoCR {
+        display: block;
+        margin: 20px 0;
+        text-align: center
+    }
+}
+
+@media screen and (min-width:991px) {
+    .onm-topoC {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 5%;
+        max-width: 1366px;
+        width: 100%
+    }
+}
+
+@media screen and (max-width:767px) {
+
+    .onm-404-botao,
+    .onm-404-botao:active,
+    .onm-404-botao:focus,
+    .onm-404-botao:visited {
+        padding: 15px 20px
+    }
+
+    .onm-404-texto {
+        font-size: 24px
+    }
+
+    .onm-404-titulo {
+        font-size: 40px
+    }
+
+    .onm-footer2C {
+        font-size: 11px
+    }
+
+    .onm-newsletterC {
+        flex-wrap: wrap;
+        padding: 80px 5%
+    }
+
+    .onm-newsletterCL {
+        width: 100%
+    }
+
+    .onm-newsletterCR {
+        padding-left: 0;
+        width: 100%
+    }
+
+    input[type=submit].onm-newsletter-botao,
+    input[type=submit].onm-newsletter-botao:active,
+    input[type=submit].onm-newsletter-botao:focus,
+    input[type=submit].onm-newsletter-botao:visited {
+        font-size: 14px;
+        margin-top: 30px;
+        max-width: 100%;
+        min-width: initial;
+        padding: 20px;
+        transform: initial;
+        width: 100%
+    }
+
+    input[type=email].onm-newsletter-email {
+        font-size: 14px;
+        margin-top: 50px;
+        max-width: 100%
+    }
+
+    .onm-newsletter-form {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center
+    }
+
+    .onm-newsletter-titulo {
+        font-size: 36px
+    }
+}
