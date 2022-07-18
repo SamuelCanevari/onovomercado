@@ -1,0 +1,93 @@
+.onm-faq {
+    background-color: #041e42;
+    color: #fff;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0 20px
+}
+
+.onm-faq a {
+    color: #ff1654;
+    font-weight: 700
+}
+
+.onm-faq-title {
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 62px
+}
+
+.onm-faq-section {
+    margin: 0 auto;
+    width: 42%
+}
+
+.onm-faq-subtitle {
+    font-size: 16px;
+    text-align: left
+}
+
+.onm-faq-box {
+    background-color: #021124;
+    margin: 15px 0;
+    transition: .4s
+}
+
+.onm-faq-box:hover,
+.onm-faq-active {
+    background-color: #0b1b2e
+}
+
+.onm-faq-active {
+    padding-bottom: 20px
+}
+
+.onm-faq-active .onm-faq-svg {
+    transform: rotate(-180deg)
+}
+
+.onm-faq-item {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding: 20px 30px
+}
+
+.onm-faq-item-title {
+    font-weight: 700
+}
+
+.onm-faq-item-title,
+.onm-faq-item-resp,
+.onm-faq p {
+    color: #fff;
+    margin: 0
+}
+
+.onm-faq-svg {
+    fill: #ff1654;
+    height: 24px;
+    transition: .4s ease;
+    width: 24px
+}
+
+.onm-faq-reposta {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .2s ease-out;
+    padding: 0 30px
+}
+
+@media screen and (max-width:990px) {
+    .onm-faq-section {
+        width: 85%;
+        padding: 0
+    }
+
+    .onm-faq-title {
+        line-height: 1.3
+    }
+}

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="html" lang="pt-BR" prefix="og: https://ogp.me/ns#" itemscope itemtype="http://schema.org/WebPage">
+<html class="html" lang="pt-BR">
 
 <head>
 
@@ -10,624 +10,23 @@
 
     <title>Template editável</title>
 
-    <style id='wp-block-library-theme-inline-css' type='text/css'>
-        .wp-block-audio figcaption {
-            color: #555;
-            font-size: 13px;
-            text-align: center
-        }
-
-        .is-dark-theme .wp-block-audio figcaption {
-            color: hsla(0, 0%, 100%, .65)
-        }
-
-        .wp-block-code {
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-family: Menlo, Consolas, monaco, monospace;
-            padding: .8em 1em
-        }
-
-        .wp-block-embed figcaption {
-            color: #555;
-            font-size: 13px;
-            text-align: center
-        }
-
-        .is-dark-theme .wp-block-embed figcaption {
-            color: hsla(0, 0%, 100%, .65)
-        }
-
-        .blocks-gallery-caption {
-            color: #555;
-            font-size: 13px;
-            text-align: center
-        }
-
-        .is-dark-theme .blocks-gallery-caption {
-            color: hsla(0, 0%, 100%, .65)
-        }
-
-        .wp-block-image figcaption {
-            color: #555;
-            font-size: 13px;
-            text-align: center
-        }
-
-        .is-dark-theme .wp-block-image figcaption {
-            color: hsla(0, 0%, 100%, .65)
-        }
-
-        .wp-block-pullquote {
-            border-top: 4px solid;
-            border-bottom: 4px solid;
-            margin-bottom: 1.75em;
-            color: currentColor
-        }
-
-        .wp-block-pullquote__citation,
-        .wp-block-pullquote cite,
-        .wp-block-pullquote footer {
-            color: currentColor;
-            text-transform: uppercase;
-            font-size: .8125em;
-            font-style: normal
-        }
-
-        .wp-block-quote {
-            border-left: .25em solid;
-            margin: 0 0 1.75em;
-            padding-left: 1em
-        }
-
-        .wp-block-quote cite,
-        .wp-block-quote footer {
-            color: currentColor;
-            font-size: .8125em;
-            position: relative;
-            font-style: normal
-        }
-
-        .wp-block-quote.has-text-align-right {
-            border-left: none;
-            border-right: .25em solid;
-            padding-left: 0;
-            padding-right: 1em
-        }
-
-        .wp-block-quote.has-text-align-center {
-            border: none;
-            padding-left: 0
-        }
-
-        .wp-block-quote.is-large,
-        .wp-block-quote.is-style-large,
-        .wp-block-quote.is-style-plain {
-            border: none
-        }
-
-        .wp-block-search .wp-block-search__label {
-            font-weight: 700
-        }
-
-        :where(.wp-block-group.has-background) {
-            padding: 1.25em 2.375em
-        }
-
-        .wp-block-separator.has-css-opacity {
-            opacity: .4
-        }
-
-        .wp-block-separator {
-            border: none;
-            border-bottom: 2px solid;
-            margin-left: auto;
-            margin-right: auto
-        }
-
-        .wp-block-separator.has-alpha-channel-opacity {
-            opacity: 1
-        }
-
-        .wp-block-separator:not(.is-style-wide):not(.is-style-dots) {
-            width: 100px
-        }
-
-        .wp-block-separator.has-background:not(.is-style-dots) {
-            border-bottom: none;
-            height: 1px
-        }
-
-        .wp-block-separator.has-background:not(.is-style-wide):not(.is-style-dots) {
-            height: 2px
-        }
-
-        .wp-block-table thead {
-            border-bottom: 3px solid
-        }
-
-        .wp-block-table tfoot {
-            border-top: 3px solid
-        }
-
-        .wp-block-table td,
-        .wp-block-table th {
-            padding: .5em;
-            border: 1px solid;
-            word-break: normal
-        }
-
-        .wp-block-table figcaption {
-            color: #555;
-            font-size: 13px;
-            text-align: center
-        }
-
-        .is-dark-theme .wp-block-table figcaption {
-            color: hsla(0, 0%, 100%, .65)
-        }
-
-        .wp-block-video figcaption {
-            color: #555;
-            font-size: 13px;
-            text-align: center
-        }
-
-        .is-dark-theme .wp-block-video figcaption {
-            color: hsla(0, 0%, 100%, .65)
-        }
-
-        .wp-block-template-part.has-background {
-            padding: 1.25em 2.375em;
-            margin-top: 0;
-            margin-bottom: 0
-        }
-    </style>
-    <style id='global-styles-inline-css' type='text/css'>
-        body {
-            --wp--preset--color--black: #000;
-            --wp--preset--color--cyan-bluish-gray: #abb8c3;
-            --wp--preset--color--white: #fff;
-            --wp--preset--color--pale-pink: #f78da7;
-            --wp--preset--color--vivid-red: #cf2e2e;
-            --wp--preset--color--luminous-vivid-orange: #ff6900;
-            --wp--preset--color--luminous-vivid-amber: #fcb900;
-            --wp--preset--color--light-green-cyan: #7bdcb5;
-            --wp--preset--color--vivid-green-cyan: #00d084;
-            --wp--preset--color--pale-cyan-blue: #8ed1fc;
-            --wp--preset--color--vivid-cyan-blue: #0693e3;
-            --wp--preset--color--vivid-purple: #9b51e0;
-            --wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg, rgba(6, 147, 227, 1) 0%, #9b51e0 100%);
-            --wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg, #7adcb4 0%, #00d082 100%);
-            --wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg, rgba(252, 185, 0, 1) 0%, rgba(255, 105, 0, 1) 100%);
-            --wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg, rgba(255, 105, 0, 1) 0%, #cf2e2e 100%);
-            --wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg, #eee 0%, #a9b8c3 100%);
-            --wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg, #4aeadc 0%, #9778d1 20%, #cf2aba 40%, #ee2c82 60%, #fb6962 80%, #fef84c 100%);
-            --wp--preset--gradient--blush-light-purple: linear-gradient(135deg, #ffceec 0%, #9896f0 100%);
-            --wp--preset--gradient--blush-bordeaux: linear-gradient(135deg, #fecda5 0%, #fe2d2d 50%, #6b003e 100%);
-            --wp--preset--gradient--luminous-dusk: linear-gradient(135deg, #ffcb70 0%, #c751c0 50%, #4158d0 100%);
-            --wp--preset--gradient--pale-ocean: linear-gradient(135deg, #fff5cb 0%, #b6e3d4 50%, #33a7b5 100%);
-            --wp--preset--gradient--electric-grass: linear-gradient(135deg, #caf880 0%, #71ce7e 100%);
-            --wp--preset--gradient--midnight: linear-gradient(135deg, #020381 0%, #2874fc 100%);
-            --wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');
-            --wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');
-            --wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');
-            --wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');
-            --wp--preset--duotone--midnight: url('#wp-duotone-midnight');
-            --wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');
-            --wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');
-            --wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');
-            --wp--preset--font-size--small: 13px;
-            --wp--preset--font-size--medium: 20px;
-            --wp--preset--font-size--large: 36px;
-            --wp--preset--font-size--x-large: 42px
-        }
-
-        .has-black-color {
-            color: var(--wp--preset--color--black) !important
-        }
-
-        .has-cyan-bluish-gray-color {
-            color: var(--wp--preset--color--cyan-bluish-gray) !important
-        }
-
-        .has-white-color {
-            color: var(--wp--preset--color--white) !important
-        }
-
-        .has-pale-pink-color {
-            color: var(--wp--preset--color--pale-pink) !important
-        }
-
-        .has-vivid-red-color {
-            color: var(--wp--preset--color--vivid-red) !important
-        }
-
-        .has-luminous-vivid-orange-color {
-            color: var(--wp--preset--color--luminous-vivid-orange) !important
-        }
-
-        .has-luminous-vivid-amber-color {
-            color: var(--wp--preset--color--luminous-vivid-amber) !important
-        }
-
-        .has-light-green-cyan-color {
-            color: var(--wp--preset--color--light-green-cyan) !important
-        }
-
-        .has-vivid-green-cyan-color {
-            color: var(--wp--preset--color--vivid-green-cyan) !important
-        }
-
-        .has-pale-cyan-blue-color {
-            color: var(--wp--preset--color--pale-cyan-blue) !important
-        }
-
-        .has-vivid-cyan-blue-color {
-            color: var(--wp--preset--color--vivid-cyan-blue) !important
-        }
-
-        .has-vivid-purple-color {
-            color: var(--wp--preset--color--vivid-purple) !important
-        }
-
-        .has-black-background-color {
-            background-color: var(--wp--preset--color--black) !important
-        }
-
-        .has-cyan-bluish-gray-background-color {
-            background-color: var(--wp--preset--color--cyan-bluish-gray) !important
-        }
-
-        .has-white-background-color {
-            background-color: var(--wp--preset--color--white) !important
-        }
-
-        .has-pale-pink-background-color {
-            background-color: var(--wp--preset--color--pale-pink) !important
-        }
-
-        .has-vivid-red-background-color {
-            background-color: var(--wp--preset--color--vivid-red) !important
-        }
-
-        .has-luminous-vivid-orange-background-color {
-            background-color: var(--wp--preset--color--luminous-vivid-orange) !important
-        }
-
-        .has-luminous-vivid-amber-background-color {
-            background-color: var(--wp--preset--color--luminous-vivid-amber) !important
-        }
-
-        .has-light-green-cyan-background-color {
-            background-color: var(--wp--preset--color--light-green-cyan) !important
-        }
-
-        .has-vivid-green-cyan-background-color {
-            background-color: var(--wp--preset--color--vivid-green-cyan) !important
-        }
-
-        .has-pale-cyan-blue-background-color {
-            background-color: var(--wp--preset--color--pale-cyan-blue) !important
-        }
-
-        .has-vivid-cyan-blue-background-color {
-            background-color: var(--wp--preset--color--vivid-cyan-blue) !important
-        }
-
-        .has-vivid-purple-background-color {
-            background-color: var(--wp--preset--color--vivid-purple) !important
-        }
-
-        .has-black-border-color {
-            border-color: var(--wp--preset--color--black) !important
-        }
-
-        .has-cyan-bluish-gray-border-color {
-            border-color: var(--wp--preset--color--cyan-bluish-gray) !important
-        }
-
-        .has-white-border-color {
-            border-color: var(--wp--preset--color--white) !important
-        }
-
-        .has-pale-pink-border-color {
-            border-color: var(--wp--preset--color--pale-pink) !important
-        }
-
-        .has-vivid-red-border-color {
-            border-color: var(--wp--preset--color--vivid-red) !important
-        }
-
-        .has-luminous-vivid-orange-border-color {
-            border-color: var(--wp--preset--color--luminous-vivid-orange) !important
-        }
-
-        .has-luminous-vivid-amber-border-color {
-            border-color: var(--wp--preset--color--luminous-vivid-amber) !important
-        }
-
-        .has-light-green-cyan-border-color {
-            border-color: var(--wp--preset--color--light-green-cyan) !important
-        }
-
-        .has-vivid-green-cyan-border-color {
-            border-color: var(--wp--preset--color--vivid-green-cyan) !important
-        }
-
-        .has-pale-cyan-blue-border-color {
-            border-color: var(--wp--preset--color--pale-cyan-blue) !important
-        }
-
-        .has-vivid-cyan-blue-border-color {
-            border-color: var(--wp--preset--color--vivid-cyan-blue) !important
-        }
-
-        .has-vivid-purple-border-color {
-            border-color: var(--wp--preset--color--vivid-purple) !important
-        }
-
-        .has-vivid-cyan-blue-to-vivid-purple-gradient-background {
-            background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important
-        }
-
-        .has-light-green-cyan-to-vivid-green-cyan-gradient-background {
-            background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important
-        }
-
-        .has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background {
-            background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important
-        }
-
-        .has-luminous-vivid-orange-to-vivid-red-gradient-background {
-            background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important
-        }
-
-        .has-very-light-gray-to-cyan-bluish-gray-gradient-background {
-            background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important
-        }
-
-        .has-cool-to-warm-spectrum-gradient-background {
-            background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important
-        }
-
-        .has-blush-light-purple-gradient-background {
-            background: var(--wp--preset--gradient--blush-light-purple) !important
-        }
-
-        .has-blush-bordeaux-gradient-background {
-            background: var(--wp--preset--gradient--blush-bordeaux) !important
-        }
-
-        .has-luminous-dusk-gradient-background {
-            background: var(--wp--preset--gradient--luminous-dusk) !important
-        }
-
-        .has-pale-ocean-gradient-background {
-            background: var(--wp--preset--gradient--pale-ocean) !important
-        }
-
-        .has-electric-grass-gradient-background {
-            background: var(--wp--preset--gradient--electric-grass) !important
-        }
-
-        .has-midnight-gradient-background {
-            background: var(--wp--preset--gradient--midnight) !important
-        }
-
-        .has-small-font-size {
-            font-size: var(--wp--preset--font-size--small) !important
-        }
-
-        .has-medium-font-size {
-            font-size: var(--wp--preset--font-size--medium) !important
-        }
-
-        .has-large-font-size {
-            font-size: var(--wp--preset--font-size--large) !important
-        }
-
-        .has-x-large-font-size {
-            font-size: var(--wp--preset--font-size--x-large) !important
-        }
-    </style>
+    <link rel="stylesheet" href="a.css">
+    <link rel="stylesheet" href="b.css">
 
     <link rel="stylesheet" href="style1.css">
     <link rel="stylesheet" href="style2.css">
-    <link rel="stylesheet" href="style3.css">
+    <?php require_once 'style3.php' ?>
     <link rel="stylesheet" href="style4.css">
     <link rel="stylesheet" href="style5.css">
     <link rel="stylesheet" href="style6.css">
     <link rel="stylesheet" href="style7.css">
 
-
-
     <script type='text/javascript' src='https://onovomercado.com/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
     <script type='text/javascript' src='https://onovomercado.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
-    <link rel="https://api.w.org/" href="https://onovomercado.com/wp-json/" />
-    <link rel="alternate" type="application/json" href="https://onovomercado.com/wp-json/wp/v2/pages/550" />
-    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://onovomercado.com/xmlrpc.php?rsd" />
-    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://onovomercado.com/wp-includes/wlwmanifest.xml" />
-    <meta name="generator" content="WordPress 6.0" />
-    <link rel='shortlink' href='https://onovomercado.com/?p=550' />
     <link rel="alternate" type="application/json+oembed" href="https://onovomercado.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fonovomercado.com%2Fo-bom-e-velho-marketing%2F" />
     <link rel="alternate" type="text/xml+oembed" href="https://onovomercado.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fonovomercado.com%2Fo-bom-e-velho-marketing%2F&#038;format=xml" />
 
-    <style type="text/css">
-        .recentcomments a {
-            display: inline !important;
-            padding: 0 !important;
-            margin: 0 !important
-        }
-    </style>
-    <style type="text/css">
-        #site-header.has-header-media .overlay-header-media {
-            background-color: rgba(0, 0, 0, .5)
-        }
-    </style>
-
-    <style>
-        .btn-default {
-            font-family: inherit;
-            font-size: 1rem;
-            max-width: 12.5rem;
-            height: 3.875rem;
-            width: 14.5rem;
-            border-radius: .25rem;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            text-decoration: none;
-            letter-spacing: .125rem;
-            color: #fff;
-            cursor: pointer;
-            -webkit-transition: ease-in-out .2s;
-            transition: ease-in-out .2s
-        }
-
-        .btn-default:hover {
-            background: #f4417c;
-            color: #fff
-        }
-
-        header {
-            height: 4rem;
-            width: 100vw;
-            margin: 0 auto;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            position: fixed;
-            top: 0;
-            left: 0;
-            z-index: 9999;
-            -ms-flex-pack: distribute;
-            -webkit-box-pack: center;
-            justify-content: center;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            -webkit-transition: ease-in-out .2s;
-            transition: ease-in-out .2s
-        }
-
-        header .content-header {
-            width: 81%;
-            max-width: 480px;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-align: center;
-            -ms-flex-align: center;
-            align-items: center;
-            -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-            justify-content: space-between
-        }
-
-        header .content-header img {
-            height: 25px
-        }
-
-        header .content-header .access-header a {
-            font-size: 1.685rem;
-            text-decoration: none;
-            position: relative;
-            color: #fff;
-            text-transform: uppercase;
-            font-weight: 600;
-            font-size: 12px;
-            font-family: "Gilroy", sans-serif
-        }
-
-        header .content-header .access-header a:last-of-type {
-            background-color: #e0004d;
-            margin-left: 10px;
-            padding: 8px 12px;
-            border-radius: 4px
-        }
-
-        header .content-header .access-header a:last-of-type:hover {
-            opacity: .8
-        }
-
-        header .content-header .access-header .enter-header:hover {
-            color: #e0004d
-        }
-
-        .onm-courses-cta-video {
-            height: 100%;
-            display: -webkit-box;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-box-pack: center;
-            -ms-flex-pack: center;
-            justify-content: center
-        }
-
-        @media screen and (max-width:360px) {
-            header .content-header .access-header a:last-of-type {
-                display: none
-            }
-        }
-
-        @media screen and (min-width:1024px) {
-            header {
-                height: 60px;
-                width: 100%;
-                margin: 0 auto;
-                -webkit-box-pack: justify;
-                -ms-flex-pack: justify;
-                justify-content: center
-            }
-
-            header .content-header {
-                width: 90%;
-                max-width: 102.5rem;
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                align-items: center;
-                -webkit-box-pack: justify;
-                -ms-flex-pack: justify;
-                justify-content: space-between
-            }
-
-            header .content-header img {
-                height: 40px
-            }
-
-            header .content-header .access-header a {
-                font-size: 14px;
-                text-decoration: none;
-                position: relative;
-                color: #fff;
-                text-transform: uppercase;
-                font-weight: 600;
-                -webkit-transition: ease-in-out .2s;
-                transition: ease-in-out .2s
-            }
-
-            header .content-header .access-header a:last-of-type {
-                background-color: #e0004d;
-                margin-left: 10px;
-                padding: 12px 29px;
-                border-radius: 4px
-            }
-
-            header .content-header .access-header a:last-of-type:hover {
-                background-color: #f4417c
-            }
-        }
-    </style>
+    <?php require_once 'c.php' ?>
 
 </head>
 
@@ -652,38 +51,101 @@ $section1_logo = 'imagens/section1-logo.png';
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 $section2_linkVideoYT = 'https://www.youtube-nocookie.com/embed/KLipeskiKhU';
+
 $section2_titulo1 = 'Aprenda com quem sabe';
-$section2_texto1 = 'Todo mundo quer saber o que existe de mais moderno no marketing digital. Mas você é capaz de enxergar o mundo através dos olhos do marketing tradicional? Demanda e consumo, desejos e necessidades, produto e serviço, marca e posicionamento - o meio pode até mudar, mas os fundamentos permanecem. <br><br> Chegou a hora de aprendê-los com o Ricardo Poli e colocar em prática no seu negócio.';
+$section2_corTitulo1 = '#ffffff';
+
+$section2_texto1 = 'Todo mundo quer saber o que existe de mais moderno no marketing digital. Mas você é capaz de enxergar o mundo através dos olhos do marketing tradicional? Demanda e consumo, desejos e necessidades, produto e serviço, marca e posicionamento - o meio pode até mudar, mas os fundamentos permanecem.
+<br><br> Chegou a hora de aprendê-los com o Ricardo Poli e colocar em prática no seu negócio.';
+$section2_corTexto1 = '#ffffff';
+
 $section2_titulo2 = 'Conheça mais sobre o seu professor';
+$section2_corTitulo2 = '#ffffff';
+
 $section2_texto2 = 'A característica mais marcante de Ricardo Poli é seu carisma, permeada por uma contradição intrínseca. Seus alunos sempre o reconheceram pela dicotomia do “divertido, mas muito exigente”.
         <br><br> Engenheiro de formação, possui notória formação em Marketing e Comunicação pela ESPM, tendo atuado em outras grandes instituições.
         <br><br> Um grande professor e um grande curso, disponível agora para assinantes anuais d’O Novo Mercado.';
+$section2_corTexto2 = '#ffffff';
+
 $section2_textoBotao = 'QUERO VENDER TODOS OS DIAS';
+
 $section2_imagem = 'imagens/section2-imagem.jpg';
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 $section3_titulo1cima = 'Veja mais sobre o curso';
 $section3_titulo1baixo = 'O Bom e Velho Marketing';
+$section3_corTitulo1 = '#ffffff';
+
 $section3_texto1 = '13 aulas | Total: 8h21';
+$section3_corTexto1 = '#e7004c';
 
 $section3_titulo2 = 'Conheça o programa do curso';
+$section3_corTitulo2 = '#ffffff';
+
 $section3_texto2 = 'INTRODUÇÃO - 11:48';
+$section3_corTexto2 = '#e7004c';
+$section3_textoBotao = 'CARREGAR MAIS AULAS';
 
 $section3_cursos = '
-
-MÓDULO I – MARKETING//Aula 01 - A concepção de marketing//24:38;
-//Aula 02 - A concepção de marketing//24:38;
-//Aula 03 - A concepção de marketing//24:38;
-//Aula 04 - A concepção de marketing//24:38;
-//Aula 05 - A concepção de marketing//24:38;
-//Aula 06 - A concepção de marketing//24:38;
-MÓDULO II – MARKETING//Aula 07 - A concepção de marketing//24:38
-
+MÓDULO I – MARKETING//Aula 01 - A concepção de marketing//24:38;//Aula 02 - A concepção de marketing//24:38;//Aula 03 - A concepção de marketing//24:38;//Aula 04 - A concepção de marketing//24:38;//Aula 05 - A concepção de marketing//24:38;//Aula 06 - A concepção de marketing//24:38;MÓDULO II – MARKETING//Aula 07 - A concepção de marketing//24:38
 ';
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+$section4_titulo1 = 'Explore todos os cursos exclusivos para membros anuais:';
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+$section5_titulo1 = 'Membro Anual tem acesso ao Mercado de Trabalho';
+$section5_texto1 = 'Seja pago pelo seu trabalho ou consiga clientes rapidamente usando nossa área exclusiva de oportunidades.<br><br>Todos os dias dezenas de pessoas conseguem trocar serviços por dinheiro usando o Mercado de Trabalho.';
+$section5_textoBotao = 'QUERO TER ACESSO';
+$section5_imagem = 'imagens/section5-imagem.png';
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+$section6_imagem = 'imagens/section6-imagem.png';
+$section6_titulo1 = 'O Novo Mercado: somos a escola de marketing mais completa do Brasil';
+$section6_texto1 = 'Mais de 30 mil alunos já estão criando o próprio caminho e construindo negócios, relacionamentos, famílias, sonhos e possibilidades por meio da internet, chegou a sua vez.<br><br>Você não precisa levar anos para aprender uma nova habilidade.';
+$section6_textoBotao = "COMECE AGORA";
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+$section7_titulo1 = 'Nós fizemos a diferença na história dos nossos alunos';
+$section7_corTitulo1 = '#ffffff';
+$section7_texto1 = 'Veja como O Novo Mercado foi fundamental para a evolução e o amadurecimento desses três negócios. São apenas alguns exemplos das transformações que ocorrem diariamente entre os nossos quase trinta mil alunos.';
+$section7_corTexto1 = '#ffffff';
+$section7_imagem = 'imagens/section7-imagem.png';
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+$section8_titulo1 = 'Veja as vantagens de ser membro anual:';
+$section8_corTitulo1 = '#ffffff';
+
+
+$section8_anual = 'ANUAL';
+$section8_corAnual = '#f1cf6d';
+
+$section8_RS = 'R$79,90';
+$section8_mes = '/mês*';
+$section8_cobrado = '*cobrado anualmente';
+$section8_corTexto = '#ffffff';
+
+$section8_textoBotao = 'EXPERIMENTE GRÁTIS';
+$section8_corTextoBotao = '#ffffff';
+$section8_corBotao = '#e7004c';
+
+$section8_subtitulo = '7 DIAS GRÁTIS PARA EXPERIMENTAR';
+$section8_corSubtitulo = '#f1cf6d';
+
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+$section9_titulo1 = 'Perguntas frequentes';
+$section9_corTitulo1 = '#ffffff';
+$section9_corTextoDestaque = '#ffffff';
+$section9_corTexto = '#ffffff'
 
 
 ?>
@@ -745,15 +207,15 @@ MÓDULO II – MARKETING//Aula 07 - A concepção de marketing//24:38
                     <iframe width="560" height="315" src="<?= $section2_linkVideoYT ?>" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
                 <div class="content-about">
-                    <h2><?= $section2_titulo1 ?></h2>
-                    <p><?= $section2_texto1 ?></p>
+                    <h2 style="color: <?= $section2_corTitulo1 ?>"><?= $section2_titulo1 ?></h2>
+                    <p style="color: <?= $section2_corTexto1 ?>"><?= $section2_texto1 ?></p>
                 </div>
                 <div class="about-teacher">
                     <div class="infos-teacher">
                         <img src="<?= $section2_imagem ?>" alt="">
                         <div>
-                            <p>
-                                <span><?= $section2_titulo2 ?></span>
+                            <p style="color: <?= $section2_corTexto2 ?>">
+                                <span style="color: <?= $section2_corTitulo2 ?>"><?= $section2_titulo2 ?></span>
                                 <?= $section2_texto2 ?>
                             </p>
                             <a href="#onm-home-plans" class="btn-default"><?= $section2_textoBotao ?></a>
@@ -767,10 +229,10 @@ MÓDULO II – MARKETING//Aula 07 - A concepção de marketing//24:38
         <section class="onm-courses-accordeon">
             <div class="content-accordeon">
                 <div class="title-accordeon">
-                    <h2><?= $section3_titulo1cima ?><br><?= $section3_titulo1baixo ?></h2>
-                    <p class="sub-title-accordeon"><?= $section3_texto1 ?></p>
-                    <h2><?= $section3_titulo2 ?></h2>
-                    <p class="sub-title-accordeon"><?= $section3_texto2 ?></p>
+                    <h2 style="color: <?= $section3_corTitulo1 ?>"><?= $section3_titulo1cima ?><br><?= $section3_titulo1baixo ?></h2>
+                    <p class="sub-title-accordeon" style="color: <?= $section3_corTexto1 ?>"><?= $section3_texto1 ?></p>
+                    <h2 style="color: <?= $section3_corTitulo2 ?>"><?= $section3_titulo2 ?></h2>
+                    <p class="sub-title-accordeon" style="color: <?= $section3_corTexto2 ?>"><?= $section3_texto2 ?></p>
                 </div>
                 <ul class="list">
                     <?php
@@ -799,7 +261,7 @@ MÓDULO II – MARKETING//Aula 07 - A concepção de marketing//24:38
                     if ($num_linhas > 5) { ?>
                         <li class="load-more" id="load-more">
                             <img src="https://onovomercado.com/wp-content/themes/o-novo-mercado/img/google-passo-a-passo/load-spinner.svg" alt="">
-                            <span>carregar mais aulas</span>
+                            <span><?= $section3_textoBotao ?></span>
                         </li>
                     <?php
                     }
@@ -808,349 +270,88 @@ MÓDULO II – MARKETING//Aula 07 - A concepção de marketing//24:38
             </div>
         </section>
 
+        <!-- SECTION 4 -->
         <section class="onm-home-carousel-classes">
             <div class="content-carousel-classes">
                 <div class="title">
-                    <h2>
-                        Explore todos os cursos que fazem parte da assinatura anual
-                    </h2>
+                    <h2><?= $section4_titulo1 ?></h2>
                 </div>
 
                 <div class="owl-posts owl-carousel owl-theme">
                     <div class="item">
-                        <a href="https://onovomercado.com.br/o-bom-e-velho-marketing/">
-                            <img src="/wp-content/themes/o-novo-mercado/img/velho-marketing/banner-polly.jpg" alt="Bom e velho marketing">
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <img src="imagens/section4-banner1.jpg" alt="Nome curso">
                         </a>
                     </div>
                     <div class="item">
-                        <a href="https://onovomercado.com.br/monte-seu-ifood/">
-                            <img src="/wp-content/themes/o-novo-mercado/img/ifood/banner-ifood.jpg" alt="ifood">
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <img src="imagens/section4-banner2.jpg" alt="Nome curso">
                         </a>
                     </div>
                     <div class="item">
-                        <a href="https://onovomercado.com.br/formacao-basica/">
-                            <img src="/wp-content/themes/o-novo-mercado/img/banner-formacao-basica.png" alt="Formação Básica em Marketing Digital">
+                        <a href="https://www.youtube.com/" target="_blank">
+                            <img src="imagens/section4-banner3.jpg" alt="Nome curso">
                         </a>
                     </div>
-                    <div class="item">
-                        <a href="https://onovomercado.com.br/youtube-levado-a-serio/">
-                            <img src="/wp-content/themes/o-novo-mercado/img/banner-coutinho.jpg" alt="Youtube Levado a Sério">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="https://onovomercado.com.br/sua-loja-na-internet/">
-                            <img src="/wp-content/themes/o-novo-mercado/img/slni/banner-curso-sabrina.jpg" alt="Sua Loja na Internet">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="https://onovomercado.com.br/nunca-pare-de-vender/">
-                            <img src="/wp-content/themes/o-novo-mercado/img/banner-leandro-ladeira.png" alt="Nunca pare de vender">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="https://onovomercado.com.br/trafego-do-zero/">
-                            <img src="/wp-content/themes/o-novo-mercado/img/img-thumb-trafego-do-zero.png" alt="Tráfego do Zero">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <a href="https://onovomercado.com.br/google-passo-a-passo/">
-                            <img src="/wp-content/themes/o-novo-mercado/img/img-thumb-google-passo-a-passo.png" alt="Google Passo a Passo">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <img src="/wp-content/themes/o-novo-mercado/img/banner-aulas-semanais.png" alt="aulas Semanais">
-                    </div>
-                    <div class="item">
-                        <img src="/wp-content/themes/o-novo-mercado/img/onm-home-posts-icaro.jpg" alt="Masterclasses">
-                    </div>
-                    <div class="item">
-                        <a href="https://onovomercado.com.br/sem-medo-de-escrever/">
-                            <img src="/wp-content/themes/o-novo-mercado/img/onm-home-carrocel-3.png" alt="Sem medo de escrever">
-                        </a>
-                    </div>
-                    <div class="item">
-                        <img src="/wp-content/themes/o-novo-mercado/img/img-thumb-pit-stop.png" alt="Pit stop">
-                    </div>
-                    <div class="item">
-                        <img src="/wp-content/themes/o-novo-mercado/img/img-thumb-caixa-ferramentass.png" alt="Caixa de ferramentas">
-                    </div>
-                    <div class="item">
-                        <a href="https://onovomercado.com.br/home-office/">
-                            <img src="/wp-content/themes/o-novo-mercado/img/onm-home-carrocel-2.png" alt="Home Office">
-                        </a>
-                        <!-- <div class="info-class">
-                    <h3>Home Office</h3>
-                    <p>Você sabe organizar um ambiente profissional e encontrar oportunidades de trabalho sem sair de casa? Aprenda a trabalhar de casa e esteja pronto para a economia do futuro.</p>
-                </div> -->
-                    </div>
+
 
                 </div>
             </div>
         </section>
 
-        <style>
-            .onm-home-carousel-classes {
-                display: -webkit-box;
-                display: -ms-flexbox;
-                display: flex;
-                -webkit-box-pack: center;
-                -ms-flex-pack: center;
-                justify-content: center;
-                -webkit-box-align: center;
-                -ms-flex-align: center;
-                align-items: center;
-                background: 0 0
-            }
+        <link rel="stylesheet" href="carousel.css">
 
-            .onm-home-carousel-classes .content-carousel-classes {
-                width: 81%;
-                max-width: 480px;
-                margin-top: 0
-            }
-
-            .onm-home-carousel-classes .content-carousel-classes .title {
-                margin-top: 50px
-            }
-
-            .onm-home-carousel-classes .content-carousel-classes .title h2 {
-                line-height: 1.2;
-                font-size: 2.25rem;
-                text-align: center;
-                color: #fff;
-                margin-bottom: 2.5rem;
-                font-weight: 700
-            }
-
-            .onm-home-carousel-classes .content-carousel-classes .title h2 span {
-                color: #fff
-            }
-
-            .onm-home-carousel-classes .content-carousel-classes .title p {
-                text-align: center;
-                line-height: 1.2;
-                margin-top: 1rem;
-                margin-bottom: 4rem;
-                font-size: 1.25rem
-            }
-
-            .onm-home-carousel-classes .content-carousel-classes .static-img {
-                width: 100%;
-                -o-object-fit: contain;
-                object-fit: contain
-            }
-
-            .onm-home-carousel-classes .content-carousel-classes .owl-posts .item .info-class {
-                display: none
-            }
-
-            .onm-home-carousel-classes .content-carousel-classes .owl-posts .owl-nav .right-arrow {
-                position: absolute;
-                background-image: url(/wp-content/themes/o-novo-mercado/img/arrow-carousel.svg);
-                background-position: center;
-                background-repeat: no-repeat;
-                height: 50px;
-                width: 50px;
-                top: 50%;
-                left: 90%;
-                -webkit-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
-                z-index: 10
-            }
-
-            .onm-home-carousel-classes .content-carousel-classes .owl-posts .owl-nav .left-arrow {
-                position: absolute;
-                background-image: url(/wp-content/themes/o-novo-mercado/img/arrow-carousel.svg);
-                background-position: center;
-                background-repeat: no-repeat;
-                height: 50px;
-                width: 50px;
-                top: 50%;
-                right: 78%;
-                -webkit-transform: translate(-50%, -50%) rotate(180deg);
-                transform: translate(-50%, -50%) rotate(180deg);
-                z-index: 10
-            }
-
-            .onm-home-carousel-classes .content-carousel-classes .owl-posts-desk {
-                display: none
-            }
-
-            @media (min-width:1024px) {
-                .onm-home-carousel-classes .content-carousel-classes {
-                    width: 90%;
-                    max-width: 1640px;
-                    display: flex;
-                    flex-wrap: wrap;
-                    justify-content: inherit
-                }
-
-                .onm-home-carousel-classes .content-carousel-classes .title {
-                    width: 100%;
-                    position: relative;
-                    margin-top: 50px;
-                    bottom: 0
-                }
-
-                .onm-home-carousel-classes .content-carousel-classes .title h2 {
-                    margin-bottom: 2.5rem
-                }
-
-                .onm-home-carousel-classes .content-carousel-classes .title .sub-title {
-                    display: none
-                }
-
-                .onm-home-carousel-classes .content-carousel-classes .title .sub-title-desk {
-                    display: inherit;
-                    text-align: start;
-                    max-width: 900px;
-                    margin-top: 0
-                }
-
-                .onm-home-carousel-classes .content-carousel-classes .owl-posts .item .info-class {
-                    position: absolute;
-                    left: 0;
-                    bottom: 0;
-                    opacity: 0;
-                    width: 100%;
-                    display: inherit;
-                    background: #21212198;
-                    height: 50%;
-                    padding: 0 60px;
-                    -webkit-transition: ease-in .2s;
-                    transition: ease-in .2s
-                }
-
-                .onm-home-carousel-classes .content-carousel-classes .owl-posts .item .info-class h3 {
-                    font-size: 1.25rem;
-                    margin-top: 42px;
-                    font-weight: 700;
-                    color: #fff
-                }
-
-                .onm-home-carousel-classes .content-carousel-classes .owl-posts .item .info-class p {
-                    font-size: 1rem;
-                    margin-top: 1rem;
-                    padding-right: 25px;
-                    line-height: 1.5;
-                    overflow-x: auto;
-                    height: 160px;
-                    color: #fff
-                }
-
-                .onm-home-carousel-classes .content-carousel-classes .owl-posts .item:hover .info-class {
-                    opacity: 1
-                }
-
-                .onm-home-carousel-classes .content-carousel-classes .static-img {
-                    display: none
-                }
-
-                .onm-home-carousel-classes .content-carousel-classes .owl-posts .owl-nav .right-arrow {
-                    left: 103%
-                }
-
-                .onm-home-carousel-classes .content-carousel-classes .owl-posts {
-                    display: flex;
-                    justify-content: center;
-                    max-width: 1230px
-                }
-
-                .onm-home-carousel-classes .content-carousel-classes .owl-posts .owl-nav .left-arrow {
-                    right: 100%
-                }
-
-                .onm-home-how-works .bg-posters {
-                    display: none
-                }
-
-                .onm-home-how-works .bg-posters-desk {
-                    display: flex;
-                    position: absolute;
-                    top: 0
-                }
-
-                .onm-home-carousel-classes .content-carousel-classes .owl-posts-desk {
-                    display: -ms-grid;
-                    display: grid;
-                    -webkit-box-pack: center;
-                    -ms-flex-pack: center;
-                    justify-content: center;
-                    -ms-flex-wrap: wrap;
-                    flex-wrap: wrap;
-                    grid-template-columns: repeat(3, auto);
-                    grid-row-gap: 15px;
-                    grid-column-gap: 15px
-                }
-
-                .onm-home-carousel-classes .content-carousel-classes .owl-posts-desk .item img {
-                    width: 100%;
-                    height: 100%;
-                    -o-object-fit: cover;
-                    object-fit: cover
-                }
-            }
-        </style>
-
+        <!-- SECTION 5 -->
         <section class="onm-courses-job-marketing">
             <div class="content-job-marketing">
                 <picture>
-                    <img src="https://onovomercado.com/wp-content/themes/o-novo-mercado/img/npdv/macbook.png" alt="O Novo Mercado">
+                    <img src="<?= $section5_imagem ?>" alt="">
                 </picture>
                 <div class="infos-job-marketing">
-                    <h2>Membro Anual tem acesso ao Mercado de Trabalho</h2>
-                    <p>Seja pago pelo seu trabalho ou consiga clientes rapidamente usando nossa área exclusiva de
-                        oportunidades.</p>
-                    <p>Todos os dias dezenas de pessoas conseguem trocar serviços por dinheiro usando o Mercado de
-                        Trabalho.</p>
-                    <a href="#onm-home-plans" class="btn-default">quero ter acesso</a>
+                    <h2><?= $section5_titulo1 ?></h2>
+                    <p><?= $section5_texto1 ?></p>
+                    <a href="#onm-home-plans" class="btn-default"><?= $section5_textoBotao ?></a>
                 </div>
             </div>
         </section>
 
+        <!-- SECTION 6 -->
         <section class="onm-courses-about-us">
             <div class="content-about-us">
-                <img src="https://onovomercado.com/wp-content/themes/o-novo-mercado/img/smartphone.png" alt="smartphone">
+                <img src="<?= $section6_imagem ?>" alt="">
                 <div class="infos-about-us">
-                    <h2>O Novo Mercado: somos a escola de marketing mais completa do Brasil</h2>
-                    <p>Mais de 30 mil alunos já estão criando o próprio caminho e construindo negócios, relacionamentos,
-                        famílias, sonhos e possibilidades por meio da internet, chegou a sua vez.</p>
-                    <p>Você não precisa levar anos para aprender uma nova habilidade.</p>
+                    <h2><?= $section6_titulo1 ?></h2>
+                    <p><?= $section6_texto1 ?></p>
                 </div>
-                <a href="#onm-home-plans" class="btn-default">comece agora</a>
-
+                <a href="#onm-home-plans" class="btn-default"><?= $section6_textoBotao ?></a>
             </div>
         </section>
 
+        <!-- SECTION 7 -->
         <section class="onm-captura-testimony">
             <div class="content-testimony">
                 <div class="testimony-title">
-                    <h2>Nós fizemos a diferença na história dos nossos alunos</h2>
-                    <p class="sub-title">
-                        Veja como O Novo Mercado foi fundamental para a evolução e o amadurecimento desses três
-                        negócios. São apenas alguns exemplos das transformações que ocorrem diariamente entre os
-                        nossos quase trinta mil alunos.
-                    </p>
+                    <h2 style="color: <?= $section7_corTitulo1 ?>"><?= $section7_titulo1 ?></h2>
+                    <p class="sub-title" style="color: <?= $section7_corTexto1 ?>"><?= $section7_texto1 ?></p>
                 </div>
                 <div class="owl-testimony owl-carousel owl-theme slider">
                     <div class="slide">
                         <div class="onm-testimony-card">
-                            <img src="https://onovomercado.com/wp-content/themes/o-novo-mercado/img/onm-comoFunciona-depoimentos-fernanda.png" alt="">
+                            <img src="<?= $section7_imagem ?>" alt="">
                             <div class="onm-testimony-depoimento">
                                 <p>
                                     Depois de seguir o Ícaro e virar aluna ONM ajudei meus pais a criarem uma empresa de
                                     empadas e alcançarem a independência financeira!
-
-                                    <span>Obrigada!</span>
                                 </p>
                             </div>
                             <div class="onm-depoimentos-autor">
-                                <p>Barbara Reis</p>
+                                <p>1</p>
                             </div>
                         </div>
                     </div>
                     <div class="slide">
                         <div class="onm-testimony-card">
-                            <img src="https://onovomercado.com/wp-content/themes/o-novo-mercado/img/onm-comoFunciona-depoimentos-carla.png" alt="">
+                            <img src="<?= $section7_imagem ?>" alt="">
                             <div class="onm-testimony-depoimento">
                                 <p>
                                     Fiz minha primeira live cozinhando ao vivo e a proposta agradou a quem participava,
@@ -1160,13 +361,13 @@ MÓDULO II – MARKETING//Aula 07 - A concepção de marketing//24:38
                                 </p>
                             </div>
                             <div class="onm-depoimentos-autor">
-                                <p>Carla Betânia</p>
+                                <p>2</p>
                             </div>
                         </div>
                     </div>
                     <div class="slide">
                         <div class="onm-testimony-card">
-                            <img src="https://onovomercado.com/wp-content/themes/o-novo-mercado/img/onm-comoFunciona-depoimentos-felipe.png" alt="">
+                            <img src="<?= $section7_imagem ?>" alt="">
                             <div class="onm-testimony-depoimento">
                                 <p>
                                     Eu já aprendi bastante coisa. Tenho dois empregos e filhos mas, mesmo assim, me
@@ -1176,13 +377,13 @@ MÓDULO II – MARKETING//Aula 07 - A concepção de marketing//24:38
                                 </p>
                             </div>
                             <div class="onm-depoimentos-autor">
-                                <p>Felipe Freitas</p>
+                                <p>3</p>
                             </div>
                         </div>
                     </div>
                     <div class="slide">
                         <div class="onm-testimony-card">
-                            <img src="https://onovomercado.com/wp-content/themes/o-novo-mercado/img/onm-assine-am-depoimento1.png" alt="">
+                            <img src="<?= $section7_imagem ?>" alt="">
                             <div class="onm-testimony-depoimento">
                                 <p>
                                     Entrei no ONM com o objetivo de aumentar a cartela de clientes (sou Advogada).
@@ -1194,38 +395,7 @@ MÓDULO II – MARKETING//Aula 07 - A concepção de marketing//24:38
                                 </p>
                             </div>
                             <div class="onm-depoimentos-autor">
-                                <p>Barbara Reis</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="onm-testimony-card">
-                            <img src="https://onovomercado.com/wp-content/themes/o-novo-mercado/img/onm-assine-am-depoimento2.png" alt="">
-                            <div class="onm-testimony-depoimento">
-                                <p>
-                                    Sou Personal Trainer e quando assinei o ONM já tinha um faturamento legal, mas com o
-                                    excesso de informação sobre marketing digital não fazia nada direito. Decidi seguir
-                                    apenas os conteúdos do ONM e de lá pra cá faturei mais de 500 mil. Nada me motiva
-                                    mais do que a famosa frase do Ícaro: “me deem 10 anos”.
-                                </p>
-                            </div>
-                            <div class="onm-depoimentos-autor">
-                                <p>Thais de Araújo</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="slide">
-                        <div class="onm-testimony-card">
-                            <img src="https://onovomercado.com/wp-content/themes/o-novo-mercado/img/onm-assine-am-depoimento3.png" alt="">
-                            <div class="onm-testimony-depoimento">
-                                <p>
-                                    Há alguns anos eu era vendedor de espetinhos. Entrei no Mark Digital há mais ou
-                                    menos 4 anos. Nos últimos 12 meses, eu e minha sócia (somente com o formato
-                                    desafio), fizemos mais de R$300.000. (Trezentos MIl) Obrigado turma!
-                                </p>
-                            </div>
-                            <div class="onm-depoimentos-autor">
-                                <p>Nikollas Hessel</p>
+                                <p>4</p>
                             </div>
                         </div>
                     </div>
@@ -1234,20 +404,18 @@ MÓDULO II – MARKETING//Aula 07 - A concepção de marketing//24:38
             </div>
         </section>
 
+        <!-- SECTION 8 -->
         <section class="onm-captura-plans" id="onm-home-plans">
             <div class="content-plans">
                 <div class="plans-title">
-                    <h2>Veja as vantagens de ser membro anual:</h2>
-                    <!-- <p class="plans-sub-title">
-                    <span>Este curso faz parte da assinatura anual.</span><br>Assine agora e tenha acesso a este curso exclusivo, além de todo conteúdo<br> d´O Novo Mercado.
-                </p> -->
+                    <h2 style="color: <?= $section8_corTitulo1 ?>"><?= $section8_titulo1 ?></h2>
                 </div>
                 <div class="card">
                     <div class="content-card">
-                        <div class="title-plan">
-                            <span class="type-plan">anual</span>
-                            <p class="value">R$79,90<span>/mês*</span></p>
-                            <p>*cobrado anualmente</p>
+                        <div class="title-plan" style="color: <?= $section8_corTexto ?>">
+                            <span class="type-plan"><?= $section8_anual ?></span>
+                            <p class="value"><?= $section8_RS ?><span style="color: <?= $section8_corTexto ?>"><?= $section8_mes ?></span></p>
+                            <p><?= $section8_cobrado ?></p>
                         </div>
                         <ul class="grid-one">
                             <li>Aula semanal Ao Vivo</li>
@@ -1258,7 +426,6 @@ MÓDULO II – MARKETING//Aula 07 - A concepção de marketing//24:38
                             <li>Aulas legendadas</li>
                             <li>App com aulas offline</li>
                             <li>Transcrições e materiais de apoio</li>
-
                         </ul>
                         <span class="module-curse">cursos</span>
                         <ul class="grid-two">
@@ -1278,312 +445,90 @@ MÓDULO II – MARKETING//Aula 07 - A concepção de marketing//24:38
                         </ul>
                         <div class="container-btn">
                             <a href="https://pay.hotmart.com/I11728780W?off=jwn1nzud&amp;checkoutMode=10&amp;split=12&amp;email=undefined&amp;_ga=2.144627317.1974962860.1618834603-349499969.1610737874&amp;_gac=1.27386830.1616601948.CjwKCAjwxuuCBhATEiwAIIIz0XK3QVgG9xpr-7JON1wrHSZlLy1bagI4zqclk5aeg9dPAsgnzbdyzhoC5AsQAvD_BwE&amp;bid=1618863879568" class="btn-default">experimente grátis</a>
-                            <span>7 dias grátis para experimentar</span>
+                            <span style="color: <?= $section8_corSubtitulo ?>"><?= $section8_subtitulo ?></span>
                         </div>
                     </div>
                     <div class="payment-icons">
                         <ul>
-                            <li><img src="https://onovomercado.com/wp-content/themes/o-novo-mercado/img/icones-cartoes-01.svg" alt=""></li>
-                            <li><img src="https://onovomercado.com/wp-content/themes/o-novo-mercado/img/icones-cartoes-02.svg" alt=""></li>
-                            <li><img src="https://onovomercado.com/wp-content/themes/o-novo-mercado/img/icones-cartoes-03.svg" alt=""></li>
-                            <li><img src="https://onovomercado.com/wp-content/themes/o-novo-mercado/img/icones-cartoes-04.svg" alt=""></li>
-                            <li><img src="https://onovomercado.com/wp-content/themes/o-novo-mercado/img/icones-cartoes-05.svg" alt=""></li>
-                            <li><img src="https://onovomercado.com/wp-content/themes/o-novo-mercado/img/icones-cartoes-06.svg" alt=""></li>
-                            <li><img src="https://onovomercado.com/wp-content/themes/o-novo-mercado/img/icones-cartoes-07.svg" alt=""></li>
-                            <li><img src="https://onovomercado.com/wp-content/themes/o-novo-mercado/img/icones-cartoes-08.svg" alt=""></li>
+                            <?php
+                            $cont = 0;
+                            while ($cont <= 7) { ?>
+                                <li><img src="imagens/section1-logo.png" alt=""></li>
+                            <?php
+                                $cont = $cont + 1;
+                            }
+                            ?>
                         </ul>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- SECTION 9 -->
+
         <body>
             <div class="onm-faq">
-                <p class="onm-faq-title">Perguntas frequentes</p>
+                <p class="onm-faq-title" style="color: <?= $section9_corTitulo1 ?>"><?= $section9_titulo1 ?></p>
                 <div class="onm-faq-section">
-                    <!-- <p class="onm-faq-subtitle">Teste grátis</p> -->
                     <div>
-                        <p>Como assinar</p>
+                        <p style="color: <?= $section9_corTextoDestaque ?>">Como assinar</p>
                         <div class="onm-faq-box">
                             <div class="onm-faq-item">
-                                <p class="onm-faq-item-title">O que está incluído no plano anual?</p>
+                                <p class="onm-faq-item-title" style="color: <?= $section9_corTexto ?>">O que está incluído no plano anual?</p>
                                 <div id="onm-faq-seta">
                                     <svg class="onm-faq-svg">
                                         <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"></path>
                                     </svg>
                                 </div>
                             </div>
-                            <p class="onm-faq-reposta">
-                                No plano anual você tem acesso a aula ao vivo semanal, e ao arquivo completo com mais de
-                                260 aulas com temas sobre: marketing digital, copywriting, gestão de tráfego,
-                                negociação, vendas, redes sociais, Instagram para negócios e muito mais.<br><br>
-
-                                Além disso, você tem acesso aos cursos <strong>Formação Básica em Marketing Digital,
-                                    Home Office e Sem Medo de Escrever</strong>, aos módulos <strong>Caixa de
-                                    Ferramentas</strong> e <strong>Pit Stop</strong>, além de todos os cursos exclusivos
-                                ONM Experts com alguns dos maiores nomes do mercado digital como: Ícaro de Carvalho,
-                                Leandro Ladeira, Pedro Sobral, Tiago Tessmann, Sabrina Nunes e Camilo Coutinho.<br><br>
-                                Você também tem acesso ao nosso aplicativo exclusivo, aulas offline, legenda,
-                                transcrição e material de apoio em todas as aulas, e a nossa comunidade fechada de
-                                membros.<br><br>
-                                E ainda pode contratar profissionais ou oferecer seus serviços no <strong>Mercado de
-                                    Trabalho</strong>.
+                            <p class="onm-faq-reposta" style="color: <?= $section9_corTexto ?>">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, possimus magni. Dolores eius voluptatibus tempora omnis vitae sequi possimus sunt porro hic, temporibus labore, et quas maiores dicta non! Quod!
                             </p>
                         </div>
                         <div class="onm-faq-box">
                             <div class="onm-faq-item">
-                                <p class="onm-faq-item-title">Teste de 7 dias</p>
+                                <p class="onm-faq-item-title" style="color: <?= $section9_corTexto ?>">O que está incluído no plano anual?</p>
                                 <div id="onm-faq-seta">
                                     <svg class="onm-faq-svg">
                                         <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"></path>
                                     </svg>
                                 </div>
                             </div>
-                            <p class="onm-faq-reposta">
-                                Para fazer o teste de 7 dias você deve assinar O Novo Mercado por meio de cartão de
-                                crédito ou PayPal, manter selecionada a opção de 7 dias grátis e, então, antes de vencer
-                                o prazo de 7 dias, realizar o cancelamento da assinatura.
+                            <p class="onm-faq-reposta" style="color: <?= $section9_corTexto ?>">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, possimus magni. Dolores eius voluptatibus tempora omnis vitae sequi possimus sunt porro hic, temporibus labore, et quas maiores dicta non! Quod!
                             </p>
                         </div>
                         <div class="onm-faq-box">
                             <div class="onm-faq-item">
-                                <p class="onm-faq-item-title">Fidelidade</p>
+                                <p class="onm-faq-item-title" style="color: <?= $section9_corTexto ?>">O que está incluído no plano anual?</p>
                                 <div id="onm-faq-seta">
                                     <svg class="onm-faq-svg">
                                         <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"></path>
                                     </svg>
                                 </div>
                             </div>
-                            <p class="onm-faq-reposta">
-                                Não exigimos fidelidade.<br><br>
-                                Ao adquirir nossa assinatura no modelo de mensalidade, você pode cancelar quando quiser,
-                                sem que seja necessário continuar por mais de um mês.<br><br>
-                                O mesmo ocorre para a assinatura no modelo anual, que você pode cancelar no momento que
-                                desejar, sem que seja necessário continuar por mais de um ano.
-                            </p>
-                        </div>
-                        <p>Acesso</p>
-                        <div class="onm-faq-box">
-                            <div class="onm-faq-item">
-                                <p class="onm-faq-item-title">Problema no acesso às aulas</p>
-                                <div id="onm-faq-seta">
-                                    <svg class="onm-faq-svg">
-                                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                            <p class="onm-faq-reposta">
-                                Tentou acessar e recebeu um aviso para configurar o pagamento ou entrar em contato com o
-                                produtor?<br><br>
-                                Fique tranquilo, esse não é o local de acesso! Para acessar as aulas, clique em Entrar,
-                                no topo dessa mesma página.<br><br>
-                                Caso não lembre a sua senha, é só utilizar a função Esqueceu sua senha?.<br><br>
-                                Se aparecer a mensagem “Você está sem acesso, por favor contate o suporte”, logo após o
-                                login, envie um e-mail para contato@onovomercado.com.br, pois há um problema com seu
-                                pagamento.
+                            <p class="onm-faq-reposta" style="color: <?= $section9_corTexto ?>">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, possimus magni. Dolores eius voluptatibus tempora omnis vitae sequi possimus sunt porro hic, temporibus labore, et quas maiores dicta non! Quod!
                             </p>
                         </div>
                         <div class="onm-faq-box">
                             <div class="onm-faq-item">
-                                <p class="onm-faq-item-title">Por onde começar? Quais aulas assistir?</p>
+                                <p class="onm-faq-item-title" style="color: <?= $section9_corTexto ?>">O que está incluído no plano anual?</p>
                                 <div id="onm-faq-seta">
                                     <svg class="onm-faq-svg">
                                         <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"></path>
                                     </svg>
                                 </div>
                             </div>
-                            <p class="onm-faq-reposta">
-                                Em nosso portal, temos um módulo chamado Comece por Aqui.<br><br>
-                                Ali, explicamos sobre a origem da nossa escola, damos dicas de livros e também sobre
-                                como utilizar nossa Lista de aulas.<br><br>
-                                Nessa lista, apresentamos roteiros de aulas para diversos perfis pré-traçados.
-                                Identifique qual é seu perfil e bons estudos!
-                            </p>
-                        </div>
-                        <div class="onm-faq-box">
-                            <div class="onm-faq-item">
-                                <p class="onm-faq-item-title">Acesso ao Grupo</p>
-                                <div id="onm-faq-seta">
-                                    <svg class="onm-faq-svg">
-                                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                            <p class="onm-faq-reposta">
-                                Temos um grupo exclusivo para alunos, localizado no Facebook. Enviamos o link de acesso
-                                a esse grupo no e-mail de boas-vindas.<br><br>
-                                Tanto alunos de O Novo Mercado como alunos do curso Transformando Palavras em Dinheiro
-                                têm acesso a ele. Para participar, basta acessar por lá e solicitar a entrada.<br><br>
-                                Todos os participantes devem seguir os Termos de uso. Aqueles que desrespeitarem as
-                                regras serão removidos por nossa equipe de moderação.<br><br>
-                                Mas, não se assuste: essas regras visam, basicamente, o respeito mútuo e a manutenção do
-                                foco do grupo, que é crescimento profissional.
-                            </p>
-                        </div>
-                        <p>Pagamentos</p>
-                        <div class="onm-faq-box">
-                            <div class="onm-faq-item">
-                                <p class="onm-faq-item-title">Formas de Pagamento</p>
-                                <div id="onm-faq-seta">
-                                    <svg class="onm-faq-svg">
-                                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                            <p class="onm-faq-reposta">
-                                Trabalhamos com as seguintes formas de pagamento:<br><br>
-
-                                - Cartão de crédito, em até 12x sem juros<br>
-                                - Cartão Virtual Caixa<br>
-                                - Boleto à vista<br>
-                                - Conta Hotmart<br>
-                                - PayPal<br>
-                                - Samsung Pay
-                            </p>
-                        </div>
-                        <div class="onm-faq-box">
-                            <div class="onm-faq-item">
-                                <p class="onm-faq-item-title">Cancelamento</p>
-                                <div id="onm-faq-seta">
-                                    <svg class="onm-faq-svg">
-                                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                            <p class="onm-faq-reposta">
-                                Aqui é tudo muito simples, você pode cancelar a sua assinatura quando quiser. Basta
-                                seguir o tutorial que preparamos para você clicando aqui ou copiando o seguinte link no
-                                seu navegador:<a href="https://onovomercado.zendesk.com/hc/pt-br/articles/360044717552-Como-cancelar-a-minha-assinatura ">https://onovomercado.zendesk.com/hc/pt-br/articles/360044717552-Como-cancelar-a-minha-assinatura
-                                </a><br><br>
-                                Se puder, por favor, ajude-nos a melhorar respondendo <a href="https://www.questionpro.com/t/AQFWPZgtyQ">aqui</a>. É rapidinho:<br><br>
-                                E atenção: o cancelamento retira seu acesso instantaneamente. Recomendamos que você
-                                verifique sua data de renovação, para saber quando cancelar sem perder nenhum dia.
-                            </p>
-
-                        </div>
-                        <div class="onm-faq-box">
-                            <div class="onm-faq-item">
-                                <p class="onm-faq-item-title">Reembolso</p>
-                                <div id="onm-faq-seta">
-                                    <svg class="onm-faq-svg">
-                                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"></path>
-                                    </svg>
-                                </div>
-                            </div>
-                            <p class="onm-faq-reposta">
-
-                                Quem escolhe a opção de teste de sete dias pode cancelar sua assinatura dentro desse
-                                período, sem que ela seja cobrada. Caso você tenha perdido o prazo de cancelamento, não
-                                faremos reembolso. Exigimos dos nossos alunos o mesmo respeito com que os tratamos.
-                                Portanto, fique atento ao prazo.<br><br>
-
-                                Sobre o plano anual: você pode solicitar ao nosso suporte o reembolso proporcional ao
-                                período entre a data do cancelamento e o término da assinatura anual, com retenção de
-                                30% do sobre as mensalidades vincendas a título de multa pela rescisão
-                                antecipada.<br><br>
-
-                                Em caso de outra necessidade, contate o suporte através do e-mail
-                                <strong>contato@onovomercado.com.br</strong>.
+                            <p class="onm-faq-reposta" style="color: <?= $section9_corTexto ?>">
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero, possimus magni. Dolores eius voluptatibus tempora omnis vitae sequi possimus sunt porro hic, temporibus labore, et quas maiores dicta non! Quod!
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <style>
-                .onm-faq {
-                    background-color: #041e42;
-                    color: #fff;
-                    width: 100%;
-                    margin: 0 auto;
-                    padding: 0 0 20px
-                }
 
-                .onm-faq a {
-                    color: #ff1654;
-                    font-weight: 700
-                }
-
-                .onm-faq-title {
-                    font-weight: 700;
-                    font-size: 40px;
-                    text-align: center;
-                    padding-bottom: 62px
-                }
-
-                .onm-faq-section {
-                    margin: 0 auto;
-                    width: 42%
-                }
-
-                .onm-faq-subtitle {
-                    font-size: 16px;
-                    text-align: left
-                }
-
-                .onm-faq-box {
-                    background-color: #021124;
-                    margin: 15px 0;
-                    transition: .4s
-                }
-
-                .onm-faq-box:hover,
-                .onm-faq-active {
-                    background-color: #0b1b2e
-                }
-
-                .onm-faq-active {
-                    padding-bottom: 20px
-                }
-
-                .onm-faq-active .onm-faq-svg {
-                    transform: rotate(-180deg)
-                }
-
-                .onm-faq-item {
-                    align-items: center;
-                    cursor: pointer;
-                    display: flex;
-                    flex-flow: row;
-                    justify-content: space-between;
-                    padding: 20px 30px
-                }
-
-                .onm-faq-item-title {
-                    font-weight: 700
-                }
-
-                .onm-faq-item-title,
-                .onm-faq-item-resp,
-                .onm-faq p {
-                    color: #fff;
-                    margin: 0
-                }
-
-                .onm-faq-svg {
-                    fill: #ff1654;
-                    height: 24px;
-                    transition: .4s ease;
-                    width: 24px
-                }
-
-                .onm-faq-reposta {
-                    max-height: 0;
-                    overflow: hidden;
-                    transition: max-height .2s ease-out;
-                    padding: 0 30px
-                }
-
-                @media screen and (max-width:990px) {
-                    .onm-faq-section {
-                        width: 85%;
-                        padding: 0
-                    }
-
-                    .onm-faq-title {
-                        line-height: 1.3
-                    }
-                }
-            </style>
+            <link rel="stylesheet" href="d.css">
 
             <script>
                 var faq_item = document.getElementsByClassName("onm-faq-item");
@@ -1604,6 +549,7 @@ MÓDULO II – MARKETING//Aula 07 - A concepção de marketing//24:38
             </script>
         </body>
 
+        <!-- FOOTER -->
         <section class="footer">
             <div class="content-footer">
                 <div class="links-footer">
@@ -2028,6 +974,7 @@ MÓDULO II – MARKETING//Aula 07 - A concepção de marketing//24:38
     </div>
     <script src="https://onovomercado.com/wp-content/themes/o-novo-mercado/inc/owlcarousel/jquery.min.js"></script>
     <script src="https://onovomercado.com/wp-content/themes/o-novo-mercado/inc/owlcarousel/owl.carousel.min.js"></script>
+
     <script>
         // Scoll set background Header
 
@@ -2117,212 +1064,6 @@ MÓDULO II – MARKETING//Aula 07 - A concepção de marketing//24:38
         })
     </script>
 
-    <style>
-        .onm-popup-termos {
-            font-family: "Gilroy", sans-serif;
-            width: 100%;
-            height: 100%;
-            display: none;
-            align-items: flex-end;
-            position: fixed;
-            bottom: 0;
-            opacity: 0;
-            color: #f5f5f5;
-            background: #001840cc;
-            z-index: 9999999;
-            animation: fadein 1s;
-            animation-fill-mode: forwards
-        }
-
-        @keyframes fadein {
-            from {
-                opacity: 0
-            }
-
-            to {
-                opacity: 1
-            }
-        }
-
-        .onm-popup-termos-wrap {
-            background: #df034d
-        }
-
-        .onm-popup-termos-row {
-            width: min(1300px, 90%);
-            margin: 0 auto;
-            padding: 1rem 0;
-            display: flex;
-            justify-content: center;
-            align-items: center
-        }
-
-        .onm-popup-termosL {
-            width: min(84rem, 100%);
-            display: flex;
-            justify-content: flex-start
-        }
-
-        .onm-popup-termos p {
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 1.4;
-            margin: 0 auto;
-            color: #fff
-        }
-
-        .onm-popup-termosL a {
-            text-decoration: underline;
-            transition: all .3s;
-            color: #fff
-        }
-
-        .onm-popup-termosL a:hover {
-            color: #aecffd
-        }
-
-        .onm-popup-termosR {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 20rem
-        }
-
-        .onm-popup-termos-btn {
-            background: #021229;
-            border: 2px solid #021229;
-            border-radius: 4px;
-            color: #fff;
-            display: inline-block;
-            font-size: 1rem;
-            font-weight: 700;
-            text-align: center;
-            padding: 1rem 4rem;
-            margin: 1rem;
-            cursor: pointer
-        }
-
-        .onm-popup-termos-btn:hover {
-            border: 2px solid #021229;
-            box-shadow: 0 3px 6px #02122966;
-            color: #ffffffe6
-        }
-
-        .onm-popup-termos-btn:after {
-            display: none
-        }
-
-        @media screen and (max-width:767px) {
-            .onm-popup-termos-row {
-                flex-direction: column
-            }
-
-            .onm-popup-termosL {
-                margin: 0 auto
-            }
-
-            .onm-popup-termos p {
-                font-size: 10px;
-                line-height: 1.5;
-                font-weight: 400
-            }
-
-            .onm-popup-termosR {
-                width: auto
-            }
-
-            .onm-popup-termos-btn {
-                margin: 1rem auto 0;
-                font-size: 12px;
-                padding: 8px 4rem
-            }
-        }
-    </style>
-
-    <div class="onm-popup-termos">
-        <div class="onm-popup-termos-wrap">
-            <div class="onm-popup-termos-row">
-                <div class="onm-popup-termosL">
-                    <p>Utilizamos cookies e outras tecnologias semelhantes para melhorar a sua experiência em nossos
-                        serviços, personalizar publicidade e recomendar conteúdo de seu interesse em nossa plataforma e
-                        em serviços de terceiros. Ao navegar pelo site, você autoriza a empresa O Novo Mercado a coletar
-                        estes dados e utilizá-los para estes fins. Consulte nossa <a href="https://onovomercado.com.br/politica-de-privacidade/" target="_blank">Política de
-                            Privacidade e Proteção de Dados</a> e os <a href="https://onovomercado.com.br/termos-de-uso/" target="_blank">Termos e Condições de
-                            Uso</a> para mais detalhes.</p>
-                </div>
-                <div class="onm-popup-termosR">
-                    <div class="onm-popup-termos-btn onm-botao">ACEITAR</div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            /* Pop-up that shows the privacy agreement every time a new page is opened */
-            let popupAviso = document.querySelector('.onm-popup-termos')
-            let popupAvisoBtn = document.querySelector('.onm-popup-termos-btn')
-            let onmBody = document.body
-            let onmPathName = window.location.pathname
-
-            if (localStorage.getItem('aceitePrivacidade')) {
-                loadPixels()
-            } else {
-                if (onmPathName != '/termos-de-uso/' && onmPathName != '/politica-de-privacidade/') {
-                    // Mostra modal de Aceite
-                    popupAviso.style.display = 'flex'
-
-                    // Lock scroll
-                    window.addEventListener('scroll', noScroll)
-                }
-            }
-
-            popupAvisoBtn.addEventListener("click", () => {
-                popupAviso.parentNode.removeChild(popupAviso)
-                localStorage.setItem('aceitePrivacidade', 'true');
-
-                // Remove listener to re-enable scroll
-                window.removeEventListener('scroll', noScroll);
-
-                loadPixels()
-            })
-
-            function noScroll() {
-                window.scrollTo(0, 0);
-            }
-
-            function loadPixels() {
-                window.setTimeout(() => {
-                    /* Google Tag Manager */
-                    (function(w, d, s, l, i) {
-                        w[l] = w[l] || [];
-                        w[l].push({
-                            'gtm.start': new Date().getTime(),
-                            event: 'gtm.js'
-                        });
-                        var f = d.getElementsByTagName(s)[0],
-                            j = d.createElement(s),
-                            dl = l != 'dataLayer' ? '&l=' + l : '';
-                        j.async = true;
-                        j.src =
-                            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-                        f.parentNode.insertBefore(j, f);
-                    })(window, document, 'script', 'dataLayer', 'GTM-PFR7J3M');
-                    onmBody.insertAdjacentHTML("beforeend", `<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFR7J3M" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>`);
-                    /* End Google Tag Manager */
-
-                    /* Zendesk Tag */
-                    window.setTimeout(() => {
-                        var cc_script = document.createElement('script');
-                        cc_script.src = "https://static.zdassets.com/ekr/snippet.js?key=294780ac-451f-4aca-b17c-292905a7febf";
-                        cc_script.id = "ze-snippet";
-                        onmBody.appendChild(cc_script)
-                    }, 3000);
-                }, 1000)
-            }
-        });
-    </script>
-
     <script type='text/javascript' src='https://onovomercado.com/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
     <script type='text/javascript' src='https://onovomercado.com/wp-content/themes/oceanwp/assets/js/third/magnific-popup.min.js?ver=1.0' id='magnific-popup-js'></script>
     <script type='text/javascript' src='https://onovomercado.com/wp-content/themes/oceanwp/assets/js/third/lightbox.min.js?ver=1.0' id='oceanwp-lightbox-js'></script>
@@ -2341,10 +1082,6 @@ MÓDULO II – MARKETING//Aula 07 - A concepção de marketing//24:38
         /* ]]> */
     </script>
     <script type='text/javascript' src='https://onovomercado.com/wp-content/themes/oceanwp/assets/js/main.min.js?ver=1.0' id='oceanwp-main-js'></script>
-    <!--[if lt IE 9]>
-<script type='text/javascript' src='https://onovomercado.com/wp-content/themes/oceanwp/assets/js//third/html5.min.js?ver=1.0' id='html5shiv-js'></script>
-<![endif]-->
 </body>
 
 </html>
-<!-- Page supported by LiteSpeed Cache 4.6 on 2022-07-15 12:24:56 -->
